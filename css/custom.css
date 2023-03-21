@@ -1,0 +1,142 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+
+
+#logo a {
+	font-family: 'Inter', sans-serif;
+	letter-spacing: 2px;
+}
+
+/* Demo Specific */
+.primary-menu:not(.on-click) .menu-item.mega-menu-small > .mega-menu-content .mega-menu-column {
+	padding: 20px 0;
+}
+
+.primary-menu:not(.on-click) .menu-item.mega-menu-small > .mega-menu-content .feature-box .bi-arrow-right {
+	opacity: 0;
+	transition: all .3s ease;
+}
+
+.primary-menu:not(.on-click) .menu-item > .mega-menu-content .feature-box:hover .bi-arrow-right {
+	opacity: 1;
+	transform: translateX(10px);
+}
+
+@media (min-width: 992px) {
+
+	.primary-menu .menu-item.mega-menu-small > .mega-menu-content {
+		border-radius: 8px;
+		box-shadow: 0px 10px 70px rgb(0 0 0 / 15%);
+		overflow: hidden;
+	}
+
+	.primary-menu:not(.on-click) .menu-item.mega-menu-small > .mega-menu-content .mega-menu-column {
+		padding: 30px;
+	}
+
+}
+
+/* Section: Sticky Cards */
+
+.block-sticky-cards .content-wrap,
+.block-sticky-cards .sticky-cards-section { overflow: visible; }
+
+.block-sticky-cards .sticky-section + .sticky-section {
+		margin-top: 5vh;
+	}
+
+@media (min-width: 992px) {
+	.block-sticky-cards .sticky-section {
+		--sticky-top-gap: 30px;
+		position: -webkit-sticky;
+		position: sticky;
+		z-index: 2;
+		top: calc(80px + var(--sticky-top-gap));
+	}
+
+	.block-sticky-cards .sticky-section + .sticky-section {
+		margin-top: 20vh;
+	}
+}
+
+
+/* Section: Checklist */
+
+.checklist {
+	--cnvs-checklist-default-color: #111;
+	--cnvs-checklist-active-color: #CCC;
+	--cnvs-checklist-box-size: 1.125rem;
+	position: relative;
+}
+.checklist label {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	font-size: var(--cnvs-checklist-box-size);
+	cursor: pointer;
+	text-transform: none;
+	letter-spacing: 0;
+	font-weight: normal;
+	vertical-align: middle;
+}
+.checklist input[type="checkbox"] {
+	-webkit-appearance: none;
+}
+.checklist i {
+	position: absolute;
+	display: inline-block;
+	width: var(--cnvs-checklist-box-size);
+	height: var(--cnvs-checklist-box-size);
+	border: 2px solid var(--cnvs-checklist-default-color);
+	color: var(--cnvs-checklist-default-color);
+	border-radius: 3px;
+}
+.checklist input[type="checkbox"]:checked ~ i {
+	top: 0px;
+	border: none;
+	color: var(--cnvs-themecolor);
+}
+
+.checklist i::before {
+	opacity: 0;
+}
+.checklist input[type="checkbox"]:checked ~ i:before {
+	opacity: 1;
+}
+.checklist span {
+	position: relative;
+	left: calc(var(--cnvs-checklist-box-size) + 1rem);
+	transition: 0.5s;
+	color:var(--cnvs-checklist-default-color);
+}
+.checklist span:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: var(--cnvs-checklist-default-color);
+	transform: translateY(-50%) scaleX(0);
+	transition: transform 0.5s;
+	transform-origin: left;
+}
+.checklist input[type="checkbox"]:checked ~ span:before {
+	transform: translateY(-50%) scaleX(1);
+	transform-origin: left;
+	transition: transform 0.5s;
+}
+.checklist input[type="checkbox"]:checked ~ span {
+	color: var(--cnvs-checklist-active-color);
+}
+
+/* Dark */
+.dark .checklist {
+	--cnvs-checklist-default-color: #EEE;
+	--cnvs-checklist-active-color: rgba(255,255,255,0.4);
+}
