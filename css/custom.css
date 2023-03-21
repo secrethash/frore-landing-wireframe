@@ -49,7 +49,7 @@
 		margin-top: 5vh;
 	}
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) { */
 	.block-sticky-cards .sticky-section {
 		--sticky-top-gap: 30px;
 		position: -webkit-sticky;
@@ -61,7 +61,7 @@
 	.block-sticky-cards .sticky-section + .sticky-section {
 		margin-top: 20vh;
 	}
-}
+/* } */
 
 
 /* Section: Checklist */
