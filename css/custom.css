@@ -140,3 +140,62 @@
 	--cnvs-checklist-default-color: #EEE;
 	--cnvs-checklist-active-color: rgba(255,255,255,0.4);
 }
+
+/* --------------------------------
+ ? Section: Products Scroller 
+----------------------------------*/
+
+.list-group-item {
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #212529;
+	border: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	pointer-events: default;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: opacity .3s ease;
+}
+
+.list-group-item.active {
+	opacity: 1;
+	background-color: #000;
+}
+
+.list-group-content > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 4rem;
+	padding-right: 4rem;
+	border-bottom: 1px solid rgba(255,255,255, .15);
+}
+
+/* Responsive Device more than 992px (.device-md >)
+-----------------------------------------------------------------*/
+@media (min-width: 992px) {
+
+	.section-scroll {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		display: block;
+	}
+
+	.section-scroll .section-sticky {
+		position: -webkit-sticky;
+		position: sticky;
+		top: 200px;
+	}
+}
