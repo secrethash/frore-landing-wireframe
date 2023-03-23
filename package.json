@@ -18,7 +18,7 @@
   "scripts": {
     "start": "browser-sync start -sw",
     "dev": "gulp watch",
-    "build": "gulp imageminify && gulp minify && gulp htmlminify",
+    "build": "gulp imageminify && gulp minify && gulp htmlminify && gulp builder",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "SemiColonWeb",

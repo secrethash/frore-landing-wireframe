@@ -70,7 +70,7 @@ function minifyCSS() {
     return gulp.src([
 		'./style.css',
 		'./style-rtl.css',
-		'./css/custom.css'
+		'./theme.css'
 	]).pipe(cleanCSS())
     .pipe(gulp.dest('./dist'));
 }
@@ -87,6 +87,16 @@ function watch() {
 	gulp.watch( './js/**/*.js' ).on( 'change', browserSync.reload );
 }
 
+function copyFavicon() {
+	return gulp.src('./images/favicon.ico')
+		.pipe(gulp.dest('./dist/images'));
+}
+
+function copyCss() {
+	return gulp.src('./css/*.css')
+		.pipe(gulp.dest('./dist/css'));
+}
+
 exports.scsscompile = compileSCSS;
 exports.imageminify = compressImages;
 exports.htmlminify = minifyHTML;
@@ -94,4 +104,5 @@ exports.htmlminify = minifyHTML;
 exports.cssminify = minifyCSS;
 exports.jsminify = minifyJS;
 exports.minify = parallel(minifyCSS, minifyJS);
+exports.builder = parallel(copyCss, copyFavicon);
 exports.watch = watch;
