@@ -67,8 +67,11 @@ function minifyJS() {
 // }
 
 function minifyCSS() {
-    return gulp.src(['./style.css', './style-rtl.css'])
-    .pipe(cleanCSS())
+    return gulp.src([
+		'./style.css',
+		'./style-rtl.css',
+		'./css/custom.css'
+	]).pipe(cleanCSS())
     .pipe(gulp.dest('./dist'));
 }
 
