@@ -11,9 +11,9 @@
     "gulp-uglify": "^3.0.2",
     "sass": "^1.37.0"
   },
-  "name": "canvas",
-  "version": "7.0.3",
-  "description": "The Multi-Purpose HTML5 Template",
+  "name": "frore",
+  "version": "1.0.0",
+  "description": "Frore is a travel management suite. This is a wireframe for frore's website.",
   "main": "index.js",
   "scripts": {
     "start": "browser-sync start -sw",
@@ -21,7 +21,7 @@
     "build": "gulp imageminify && gulp minify && gulp htmlminify && gulp builder",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "SemiColonWeb",
+  "author": "Shashwat Mishra",
   "license": "ISC",
   "dependencies": {
     "imagemin": "^8.0.0",
