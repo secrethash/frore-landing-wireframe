@@ -41,7 +41,7 @@
 	<div id="wrapper">
 
 		<!-- Modal -->
-		<div class="modal d-none animated fadeInUpSmall faster" id="speakerModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<!-- <div class="modal d-none animated fadeInUpSmall faster" id="speakerModal" tabindex="-1" role="dialog" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered ms-md-4 me-md-auto align-items-end" style="max-width: 48rem;">
 				<div class="modal-content shadow border-0 overflow-hidden" style="border-radius: 20px;">
 					<div class="card border-0">
@@ -68,7 +68,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 
 		<!-- Header
@@ -103,20 +103,20 @@
 
 							<ul class="menu-container">
 								<li class="menu-item">
-									<a class="menu-link" href="demo-seo.html">
+									<a class="menu-link" href="index.html">
 										<div>Home</div>
 									</a>
 								</li>
 								
 								<!-- Mega Menu -->
 								<li class="menu-item mega-menu mega-menu-small">
-									<a class="menu-link" href="#"><div>Features</div></a>
+									<a class="menu-link" href="#"><div>Products</div></a>
 									<div class="mega-menu-content">
 										<div class="row mx-0 w-auto">
 											<ul class="sub-menu-container mega-menu-column col">
 												<div class="row gy-4 gy-lg-5">
 													<div class="col-11">
-														<a href="#" class="feature-box mx-0">
+														<a href="#prod-crs" class="feature-box mx-0" data-scrollto="#prod-crs">
 															<!-- <i class="bi-layers square square-xs p-4 bg-danger d-flex justify-content-center align-items-center bg-opacity-10 text-danger rounded-5 me-3"></i> -->
 															<div class="square bg-danger d-flex justify-content-center align-items-center bg-opacity-10 text-danger rounded-5 me-3">
 																<svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -133,7 +133,7 @@
 														</a>
 													</div>
 													<div class="col-11">
-														<a href="#" class="feature-box mx-0">
+														<a href="#prod-dcs" class="feature-box mx-0" data-scrollto="#prod-dcs">
 															<div class="square bg-primary d-flex justify-content-center align-items-center bg-opacity-10 text-primary rounded-5 me-3">
 																<svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
 																	<path d="M9.96 14.04v-1.11c0-.43-.32-.64-.71-.47l-5.01 2.16c-.79.34-1.43-.08-1.43-.93v-1.32c0-.68.51-1.47 1.14-1.73l5.7-2.45c.16-.08.3-.29.3-.47V4.66c0-.96.71-2.11 1.56-2.55.3-.15.66-.15.96 0 .86.44 1.57 1.58 1.57 2.54v3.06c0 .18.14.39.3.47l1.04.44-5.42 5.42z"></path>
@@ -148,7 +148,7 @@
 														</a>
 													</div>
 													<div class="col-11">
-														<a href="#" class="feature-box mx-0">
+														<a href="#prod-pos" class="feature-box mx-0" data-scrollto="#prod-pos">
 															<div class="square bg-success d-flex justify-content-center align-items-center bg-opacity-10 text-success rounded-5 me-3">
 																<svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
 																	<path d="M8 22h8c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H8C5.24 2 3 4.24 3 7v10c0 2.76 2.24 5 5 5z" opacity=".4"></path>
@@ -163,7 +163,7 @@
 														</a>
 													</div>
 													<div class="col-12">
-														<a href="#" class="button w-100 text-center m-0 rounded bg-color bg-opacity-10 color">View All Features</a>
+														<a href="#more-features" class="button w-100 text-center m-0 rounded bg-color bg-opacity-10 color" data-scrollto="#more-features">More Features</a>
 													</div>
 												</div>
 											</ul>
@@ -171,11 +171,11 @@
 									</div>
 								</li>
 
-								<li class="menu-item"><a class="menu-link" href="demo-seo-faqs.html">
-										<div>FAQs</div>
+								<li class="menu-item"><a class="menu-link" href="#blog"  data-scrollto="#blog">
+										<div>Blog</div>
 								</a></li>
 
-								<li class="menu-item"><a class="menu-link" href="demo-seo-contact.html">
+								<li class="menu-item"><a class="menu-link" href="#connect">
 										<div>Contact</div>
 								</a></li>
 								
@@ -264,10 +264,10 @@
 						<div class="row align-items-start justify-content-between">
 							<div class="col-lg-6 sticky-section sticky-lg-top">
 								<h1 class="display-4 fw-bold font-secondary mt-4">Complete <strong class="bg-color bg-opacity-10 color px-1">Stack</strong> to Power your Business to Success.</h1>
-								<p>Our stack includes Departure Control System, Central (Cloud) Reservation System, Passenger Service System, Marketing & Promotions Tools, Point of Sale system, and much more.</p>
+								<p>Our stack includes Departure Control System, Central (Cloud) Reservation System, Passenger Service System, Marketing & Promotions Tools, Point of Sale system, and <a href="#more-features">much more</a>.</p>
 							</div>
 							<div class="col-lg-5 block-sticky-cards-wrap">
-								<div class="sticky-section sticky-lg-top bg-white">
+								<div class="sticky-section sticky-lg-top bg-white" id="prod-crs">
 									<div class="card border border-color bg-color bg-opacity-10">
 										<div class="card-body p-5 min-vh-50 d-flex flex-column justify-content-center text-center">
 											<!-- <i class="bi-person fs-1 mb-3 text-black"></i> -->
@@ -284,7 +284,7 @@
 									</div>
 								</div>
 
-								<div class="sticky-section sticky-lg-top bg-white">
+								<div class="sticky-section sticky-lg-top bg-white" id="prod-dcs">
 									<div class="card border border-danger bg-danger bg-opacity-10">
 										<div class="card-body p-5 min-vh-50 d-flex flex-column justify-content-center text-center">
 											<!-- <i class="bi-file-earmark-person fs-1 mb-3 text-black"></i> -->
@@ -301,7 +301,7 @@
 									</div>
 								</div>
 
-								<div class="sticky-section sticky-lg-top bg-white">
+								<div class="sticky-section sticky-lg-top bg-white" id="prod-pos">
 									<div class="card border border-warning bg-warning bg-opacity-10">
 										<div class="card-body p-5 min-vh-50 d-flex flex-column justify-content-center text-center">
 											<!-- <i class="bi-wallet2 fs-1 mb-3 text-black"></i> -->
@@ -318,7 +318,7 @@
 									</div>
 								</div>
 
-								<div class="sticky-section sticky-lg-top bg-white">
+								<div class="sticky-section sticky-lg-top bg-white"  id="prod-marketing">
 									<div class="card border border-info bg-info bg-opacity-10">
 										<div class="card-body p-5 min-vh-50 d-flex flex-column justify-content-center text-center">
 											<!-- <i class="bi-credit-card fs-1 mb-3 text-black"></i> -->
@@ -397,7 +397,7 @@
 
 						<div class="row align-items-center justify-content-between">
 							
-							<div class="col-lg-6 py-6">
+							<div class="col-lg-6 py-md-6">
 								<div class="container">
 									
 									<h6 class="text-center mb-0"><small class="bg-primary bg-opacity-20 text-primary p-1 rounded">sample</small></h6>
@@ -498,7 +498,7 @@
 
 								</div>
 							</div>
-							<div class="col-lg-6 py-6 text-right">
+							<div class="col-lg-6 py-md-6 text-right">
 								<div class="container">
 									<div class="text-uppercase ls-2 mb-4 op-04">Central Reservation System</div>
 									<h1 class="h1 fw-semibold lh-base mb-4">Interactively plan journeys.</h1>
@@ -541,109 +541,66 @@
 				</div>
 				<!-- Section Timeline end -->
 
-				<!-- Section: Products -->
-				<div class="section sticky-top p-0 mb-0 mt-0 overflow-visible" style="overflow-y: scroll;">
-					<div class="row g-0">
-						<div class="col-md-6 position-sticky m-0 vh-40 min-vh-md-100 top-0 z-1 overflow-hidden">
-							<!-- Sticky Image Target -->
-							<div id="list-example" class="w-100 h-100" style="background: url('demos/speaker/images/sticky-section/video-poster.jpg') no-repeat center center / cover;">
-								<!-- List Item 1 -->
-								<a class="list-group-item active" href="#list-item-1">
-									<div class="video-wrap no-placeholder">
-										<video id="slide-video" poster="demos/speaker/images/sticky-section/video-poster.jpg" preload="auto" loop autoplay muted playsinline>
-											<source src='demos/speaker/images/sticky-section/video.mp4' type='video/mp4'>
-										</video>
+				<!-- Section: Features -->
+				<div class="section section-1-bg my-0 bg-dark dark noice-effect">
+					<div class="container py-0 py-lg-6" id="more-features">
+						<div class="row justify-content-between col-mb-80">
+
+							<div class="col-lg-4">
+								<h1>More Features,<br>More Quality.</h1>
+								<p class="mb-5 text-larger font-primary me-3">Interactively seize bricks-and-clicks channels before empowered users. Uniquely maximize bleeding-edge outsourcing.</p>
+								<!-- <a href="#" class="button button-dark bg-dark bg-opacity-10 text-dark h-bg-color m-0 px-4 py-2">View More</a> -->
+								<a href="#" class="btn bg-primary text-light px-4 py-3 d-flex align-items-center w-50">Get Started <i class="bi-arrow-right ms-auto"></i></a>
+							</div>
+
+							<div class="col-lg-8 mb-lg-6">
+								<div class="row g-5 justify-content-end">
+									<div class="col-sm-6 col-lg-5">
+										<svg xmlns="http://www.w3.org/2000/svg"width="42" class="color mb-3" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+											<path d="M8.88 4.6c-.8-3.46-6.01-3.47-6.81 0-.47 2.03.82 3.75 1.94 4.82.82.77 2.11.77 2.93 0 1.12-1.07 2.4-2.79 1.94-4.82zM5.51 6.2c-.55 0-1-.45-1-1s.44-1 .99-1h.01c.56 0 1 .45 1 1s-.44 1-1 1z" opacity=".4"></path>
+											<path d="M6.51 5.2c0 .55-.44 1-1 1-.55 0-1-.45-1-1s.44-1 .99-1h.01c.56 0 1 .45 1 1z"></path>
+											<path d="M21.91 16.6c-.8-3.46-6.03-3.47-6.84 0-.47 2.03.82 3.75 1.95 4.82.82.77 2.12.77 2.94 0 1.13-1.07 2.42-2.79 1.95-4.82zm-3.38 1.6c-.55 0-1-.45-1-1s.44-1 .99-1h.01c.55 0 1 .45 1 1s-.45 1-1 1z" opacity=".4"></path>
+											<path d="M19.53 17.2c0 .55-.45 1-1 1s-1-.45-1-1 .44-1 .99-1h.01c.55 0 1 .45 1 1zM12 19.75H9.32c-1.16 0-2.17-.7-2.57-1.78-.41-1.08-.11-2.27.76-3.04l7.99-6.99c.48-.42.49-.99.35-1.38-.15-.39-.53-.81-1.17-.81H12c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h2.68c1.16 0 2.17.7 2.57 1.78.41 1.08.11 2.27-.76 3.04L8.5 16.06c-.48.42-.49.99-.35 1.38.15.39.53.81 1.17.81H12c.41 0 .75.34.75.75s-.34.75-.75.75z"></path>
+										</svg>
+										<h4 class="fw-normal text-uppercase ls-2 mb-3">Drag n' Drop <br><strong>Journey</strong> Planner<span>.</span></h4>
+										<p class="fw-light op-08">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, earum magnam ex tenetur veniam quas ad quasi qui enim id.</p>
 									</div>
-								</a>
 
-								<!-- List Item 2 -->
-								<a class="list-group-item" href="#list-item-2">
-									<div class="fslider position-absolute h-100 w-100 top-0 start-0" data-loop="true" data-pause="5000" data-animation="fade">
-										<div class="flexslider h-100">
-											<div class="slider-wrap">
-												<div class="slide" style="background: url('demos/speaker/images/sticky-section/2-1.jpg') center right; background-size: cover; height: 100% !important;"></div>
-												<div class="slide" style="background: url('demos/speaker/images/sticky-section/2-2.jpg') center right; background-size: cover; height: 100% !important;"></div>
-											</div>
-										</div>
+									<div class="col-sm-6 col-lg-5">
+										<svg xmlns="http://www.w3.org/2000/svg" width="42" class="color mb-3" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+											<path d="M21.5 10.9V4.1c0-1.5-.64-2.1-2.23-2.1h-4.04C13.64 2 13 2.6 13 4.1v6.8c0 1.5.64 2.1 2.23 2.1h4.04c1.59 0 2.23-.6 2.23-2.1zM11 13.1v6.8c0 1.5-.64 2.1-2.23 2.1H4.73c-1.59 0-2.23-.6-2.23-2.1v-6.8c0-1.5.64-2.1 2.23-2.1h4.04c1.59 0 2.23.6 2.23 2.1z"></path>
+											<path d="M21.5 19.9v-2.8c0-1.5-.64-2.1-2.23-2.1h-4.04c-1.59 0-2.23.6-2.23 2.1v2.8c0 1.5.64 2.1 2.23 2.1h4.04c1.59 0 2.23-.6 2.23-2.1zM11 6.9V4.1C11 2.6 10.36 2 8.77 2H4.73C3.14 2 2.5 2.6 2.5 4.1v2.8c0 1.5.64 2.1 2.23 2.1h4.04C10.36 9 11 8.4 11 6.9z" opacity=".4"></path>
+										</svg>
+										<h4 class="fw-normal text-uppercase ls-2 mb-3">Plan <strong>Seats</strong> <br>Interactively<span>.</span></h4>
+										<p class="fw-light op-08">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, earum magnam ex tenetur veniam quas ad quasi qui enim id.</p>
 									</div>
-									<i class="bi-play-fill icon-stacked transform-ts bg-white h-bg-light rounded-circle text-dark h1 text-center ps-1 shadow z-9"></i>
-								</a>
 
-								<!-- List Item 3 -->
-								<a class="list-group-item" href="#list-item-3" style="background-image: url('demos/speaker/images/sticky-section/3.jpg');">
-									<i class="bi-play-fill icon-stacked transform-ts bg-white h-bg-light rounded-circle text-dark h1 text-center ps-1 shadow"></i>
-								</a>
+									<div class="col-sm-6 col-lg-5">
+										<svg xmlns="http://www.w3.org/2000/svg" width="42" class="color mb-3" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+											<path d="M18.57 22H14c-2.29 0-3.43-1.14-3.43-3.43v-7.14C10.57 9.14 11.71 8 14 8h4.57C20.86 8 22 9.14 22 11.43v7.14c0 2.29-1.14 3.43-3.43 3.43z" opacity=".4"></path>
+											<path d="M13.43 5.43v1.34c-2.62.21-4.11 1.89-4.11 4.66V16H5.43C3.14 16 2 14.86 2 12.57V5.43C2 3.14 3.14 2 5.43 2H10c2.29 0 3.43 1.14 3.43 3.43zM18.13 14.25h-.88v-.88c0-.41-.34-.75-.75-.75s-.75.34-.75.75v.88h-.88c-.41 0-.75.34-.75.75s.34.75.75.75h.88v.88c0 .41.34.75.75.75s.75-.34.75-.75v-.88h.88c.41 0 .75-.34.75-.75s-.34-.75-.75-.75z"></path>
+										</svg>
+										<h4 class="fw-normal text-uppercase ls-2 mb-3">Serve customers <br><strong>Add-ons</strong><span>.</span></h4>
+										<p class="fw-light op-08">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, earum magnam ex tenetur veniam quas ad quasi qui enim id.</p>
+									</div>
 
-								<!-- List Item 4 -->
-								<a class="list-group-item" href="#list-item-4"  style="background-image: url('demos/speaker/images/sticky-section/1.jpg');">
-									<i class="bi-play-fill icon-stacked transform-ts bg-white h-bg-light rounded-circle text-dark h1 text-center ps-1 shadow"></i>
-								</a>
-							</div>
-						</div>
-
-						<!-- List Item Content -->
-						<div class="col-md-6 list-group-content" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="250">
-							<!-- List Item Content 1 -->
-							<div id="list-item-1" class="min-vh-md-100 py-5 py-md-6 bg-transparent">
-								<svg xmlns="http://www.w3.org/2000/svg"width="72" class="color mb-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-									<path d="M8.88 4.6c-.8-3.46-6.01-3.47-6.81 0-.47 2.03.82 3.75 1.94 4.82.82.77 2.11.77 2.93 0 1.12-1.07 2.4-2.79 1.94-4.82zM5.51 6.2c-.55 0-1-.45-1-1s.44-1 .99-1h.01c.56 0 1 .45 1 1s-.44 1-1 1z" opacity=".4"></path>
-									<path d="M6.51 5.2c0 .55-.44 1-1 1-.55 0-1-.45-1-1s.44-1 .99-1h.01c.56 0 1 .45 1 1z"></path>
-									<path d="M21.91 16.6c-.8-3.46-6.03-3.47-6.84 0-.47 2.03.82 3.75 1.95 4.82.82.77 2.12.77 2.94 0 1.13-1.07 2.42-2.79 1.95-4.82zm-3.38 1.6c-.55 0-1-.45-1-1s.44-1 .99-1h.01c.55 0 1 .45 1 1s-.45 1-1 1z" opacity=".4"></path>
-									<path d="M19.53 17.2c0 .55-.45 1-1 1s-1-.45-1-1 .44-1 .99-1h.01c.55 0 1 .45 1 1zM12 19.75H9.32c-1.16 0-2.17-.7-2.57-1.78-.41-1.08-.11-2.27.76-3.04l7.99-6.99c.48-.42.49-.99.35-1.38-.15-.39-.53-.81-1.17-.81H12c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h2.68c1.16 0 2.17.7 2.57 1.78.41 1.08.11 2.27-.76 3.04L8.5 16.06c-.48.42-.49.99-.35 1.38.15.39.53.81 1.17.81H12c.41 0 .75.34.75.75s-.34.75-.75.75z"></path>
-								</svg>
-								<h2 class="display-4 fw-normal font-secondary">Drag n' Drop <strong>Journey</strong> Planner<span>.</span></h2>
-								<p class="fs-5 fw-light op-07">Monotonectally extend go forward data for pandemic deliverables. Proactively benchmark open-source human capital whereas cutting-edge "outside the box".</p>
-								<div>
-									<a href="#" class="button button-small button-light button-border border-color h-bg-color rounded-pill h-text-dark color op-08 h-op-1 m-0">learn more <i class="bi-arrow-right me-0 ms-1"></i></a>
-								</div>
-							</div>
-
-							<!-- List Item Content 2 -->
-							<div id="list-item-2" class="min-vh-md-100 py-5 py-md-6 bg-transparent">
-								<svg xmlns="http://www.w3.org/2000/svg" width="72" class="color mb-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-									<path d="M21.5 10.9V4.1c0-1.5-.64-2.1-2.23-2.1h-4.04C13.64 2 13 2.6 13 4.1v6.8c0 1.5.64 2.1 2.23 2.1h4.04c1.59 0 2.23-.6 2.23-2.1zM11 13.1v6.8c0 1.5-.64 2.1-2.23 2.1H4.73c-1.59 0-2.23-.6-2.23-2.1v-6.8c0-1.5.64-2.1 2.23-2.1h4.04c1.59 0 2.23.6 2.23 2.1z"></path>
-									<path d="M21.5 19.9v-2.8c0-1.5-.64-2.1-2.23-2.1h-4.04c-1.59 0-2.23.6-2.23 2.1v2.8c0 1.5.64 2.1 2.23 2.1h4.04c1.59 0 2.23-.6 2.23-2.1zM11 6.9V4.1C11 2.6 10.36 2 8.77 2H4.73C3.14 2 2.5 2.6 2.5 4.1v2.8c0 1.5.64 2.1 2.23 2.1h4.04C10.36 9 11 8.4 11 6.9z" opacity=".4"></path>
-								</svg>
-								<h2 class="display-4 fw-normal font-secondary">Plan <strong>Seats</strong> Interactively<span>.</span></h2>
-								<p class="fs-5 fw-light op-07">Monotonectally extend go forward data for pandemic deliverables. Proactively benchmark open-source human capital whereas cutting-edge "outside the box".</p>
-								<div>
-									<a href="#" class="button button-small button-light button-border border-color h-bg-color rounded-pill h-text-dark color op-08 h-op-1 m-0">learn more <i class="bi-arrow-right me-0 ms-1"></i></a>
-								</div>
-							</div>
-
-							<!-- List Item Content 3 -->
-							<div id="list-item-3" class="min-vh-md-100 py-5 py-md-6 bg-transparent">
-								<!-- <i class="bi-people display-4 mb-4 color"></i> -->
-								<svg xmlns="http://www.w3.org/2000/svg" width="72" class="color mb-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-									<path d="M18.57 22H14c-2.29 0-3.43-1.14-3.43-3.43v-7.14C10.57 9.14 11.71 8 14 8h4.57C20.86 8 22 9.14 22 11.43v7.14c0 2.29-1.14 3.43-3.43 3.43z" opacity=".4"></path>
-									<path d="M13.43 5.43v1.34c-2.62.21-4.11 1.89-4.11 4.66V16H5.43C3.14 16 2 14.86 2 12.57V5.43C2 3.14 3.14 2 5.43 2H10c2.29 0 3.43 1.14 3.43 3.43zM18.13 14.25h-.88v-.88c0-.41-.34-.75-.75-.75s-.75.34-.75.75v.88h-.88c-.41 0-.75.34-.75.75s.34.75.75.75h.88v.88c0 .41.34.75.75.75s.75-.34.75-.75v-.88h.88c.41 0 .75-.34.75-.75s-.34-.75-.75-.75z"></path>
-								</svg>
-								<h2 class="display-4 fw-normal font-secondary">Serve customers <strong>Add-ons</strong><span>.</span></h2>
-								<p class="fs-5 fw-light op-07">Monotonectally extend go forward data for pandemic deliverables. Proactively benchmark open-source human capital whereas cutting-edge "outside the box".</p>
-								<div>
-									<a href="#" class="button button-small button-light button-border border-color h-bg-color rounded-pill h-text-dark color op-08 h-op-1 m-0">learn more <i class="bi-arrow-right me-0 ms-1"></i></a>
-								</div>
-							</div>
-
-							<!-- List Item Content 4 -->
-							<div id="list-item-4" class="min-vh-md-100 py-5 py-md-6 bg-transparent">
-								<!-- <i class="bi-emoji-smile display-4 mb-4 color"></i> -->
-								<svg xmlns="http://www.w3.org/2000/svg" width="72" class="color mb-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-									<path d="M21.3 10.84c.39 0 .7-.31.7-.7v-.93c0-4.1-1.25-5.35-5.35-5.35h-9.3C3.25 3.86 2 5.11 2 9.21v.47c0 .39.31.7.7.7.9 0 1.63.73 1.63 1.63 0 .9-.73 1.62-1.63 1.62-.39 0-.7.31-.7.7v.47c0 4.1 1.25 5.35 5.35 5.35h9.3c4.1 0 5.35-1.25 5.35-5.35 0-.39-.31-.7-.7-.7a1.63 1.63 0 010-3.26z" opacity=".4"></path>
-									<path d="M15 15.88c-.56 0-1.01-.45-1.01-1s.45-1 1-1 1 .45 1 1-.43 1-.99 1zM9 10.88c-.56 0-1.01-.45-1.01-1s.45-1 1-1 1 .45 1 1-.43 1-.99 1zM8.63 16.43c-.19 0-.38-.07-.53-.22a.754.754 0 010-1.06l6.73-6.73c.29-.29.77-.29 1.06 0 .29.29.29.77 0 1.06l-6.73 6.73c-.14.15-.34.22-.53.22z"></path>
-								</svg>
-								<h2 class="display-4 fw-normal font-secondary">Customer <strong>Retention</strong><span>.</span></h2>
-								<p class="fs-5 fw-light op-07">Monotonectally extend go forward data for pandemic deliverables. Proactively benchmark open-source human capital whereas cutting-edge "outside the box".</p>
-								<div>
-									<a href="#" class="button button-small button-light button-border border-color h-bg-color rounded-pill h-text-dark color op-08 h-op-1 m-0">learn more <i class="bi-arrow-right me-0 ms-1"></i></a>
+									<div class="col-sm-6 col-lg-5">
+										<svg xmlns="http://www.w3.org/2000/svg" width="42" class="color mb-3" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+											<path d="M21.3 10.84c.39 0 .7-.31.7-.7v-.93c0-4.1-1.25-5.35-5.35-5.35h-9.3C3.25 3.86 2 5.11 2 9.21v.47c0 .39.31.7.7.7.9 0 1.63.73 1.63 1.63 0 .9-.73 1.62-1.63 1.62-.39 0-.7.31-.7.7v.47c0 4.1 1.25 5.35 5.35 5.35h9.3c4.1 0 5.35-1.25 5.35-5.35 0-.39-.31-.7-.7-.7a1.63 1.63 0 010-3.26z" opacity=".4"></path>
+											<path d="M15 15.88c-.56 0-1.01-.45-1.01-1s.45-1 1-1 1 .45 1 1-.43 1-.99 1zM9 10.88c-.56 0-1.01-.45-1.01-1s.45-1 1-1 1 .45 1 1-.43 1-.99 1zM8.63 16.43c-.19 0-.38-.07-.53-.22a.754.754 0 010-1.06l6.73-6.73c.29-.29.77-.29 1.06 0 .29.29.29.77 0 1.06l-6.73 6.73c-.14.15-.34.22-.53.22z"></path>
+										</svg>
+										<h4 class="fw-normal text-uppercase ls-2 mb-3"><strong>Retain</strong> Customers <br>efficiently<span>.</span></h4>
+										<p class="fw-light op-08">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, earum magnam ex tenetur veniam quas ad quasi qui enim id.</p>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				<!-- Section: Features end -->
 
-				<!-- TODO: Blog Section -->
-				<div class="section bg-transparent my-0 my-lg-5 py-5">
+				<!-- TODO: Dynamic Blog Section -->
+				<div class="section bg-transparent my-0 my-lg-5 py-5" id="blog">
 					<div class="container">
 
 						<div class="row justify-content-between col-mb-50">
@@ -651,7 +608,7 @@
 								<h4 class="color mb-2 fw-normal">Our Latest News</h4>
 								<h2 class="display-5 font-body fw-medium">Blog Posts</h2>
 								<p class="font-primary fw-light text-black">Interactively seize bricks-and-clicks channels before empowered users.</p>
-								<a href="#" class="button button-dark bg-dark bg-opacity-10 text-dark h-bg-color m-0 px-4 py-2">View all Posts</a>
+								<a href="https://blog.frore.co/" target="_blank" class="button button-dark bg-dark bg-opacity-10 text-dark h-bg-color m-0 px-4 py-2">View all Posts</a>
 							</div>
 
 							<div class="col-lg-8">
@@ -659,46 +616,46 @@
 								<div class="row">
 									<div class="col-sm-6 col-md-4 entry">
 										<div class="entry-image">
-											<img src="./images/blog/aircraft.png" alt="...">
+											<img src="./images/blog/aircraft.png" alt="How India's Aviation industry is transforming rapidly?">
 										</div>
 										<div class="entry-meta mb-2 fw-normal">
 											<ul>
-												<li><a href="#">Mar 11, 2023</a></li>
+												<li><a target="_blank" href="https://blog.frore.co/posts/how-india-s-aviation-industry-is-transforming-rapidly">Mar 08, 2023</a></li>
 											</ul>
 										</div>
 										<div class="entry-title title-sm mb-3">
-											<h3 class="text-transform-none ls-0 fw-medium font-body"><a href="#">How India's Aviation industry is transforming rapidly?</a></h3>
+											<h3 class="text-transform-none ls-0 fw-medium font-body"><a target="_blank" href="https://blog.frore.co/posts/how-india-s-aviation-industry-is-transforming-rapidly">How India's Aviation industry is transforming rapidly?</a></h3>
 										</div>
-										<a href="#" class="read-more stretched-link h-color h-op-08">Read More <i class="bi-arrow-up-right transform-ts"></i></a>
+										<a target="_blank" href="https://blog.frore.co/posts/how-india-s-aviation-industry-is-transforming-rapidly" class="read-more stretched-link h-color h-op-08">Read More <i class="bi-arrow-up-right transform-ts"></i></a>
 									</div>
 
 									<div class="col-sm-6 col-md-4 entry">
 										<div class="entry-image">
-											<img src="./images/blog/ship.png" alt="...">
+											<img src="./images/blog/ship.png" alt="India seeks to leverage its massive coastline.">
 										</div>
 										<div class="entry-meta mb-2 fw-normal">
 											<ul>
-												<li><a href="#">Feb 13, 2023</a></li>
+												<li><a target="_blank" href="https://blog.frore.co/posts/india-seeks-to-leverage-its-massive-coastline">Feb 13, 2023</a></li>
 											</ul>
 										</div>
 										<div class="entry-title title-sm mb-3">
-											<h3 class="text-transform-none ls-0 fw-medium font-body"><a href="#">India seeks to leverage its massive coastline.</a></h3>
+											<h3 class="text-transform-none ls-0 fw-medium font-body"><a target="_blank" href="https://blog.frore.co/posts/india-seeks-to-leverage-its-massive-coastline">India seeks to leverage its massive coastline.</a></h3>
 										</div>
-										<a href="#" class="read-more stretched-link h-color h-op-08">Read More <i class="bi-arrow-up-right transform-ts"></i></a>
+										<a target="_blank" href="https://blog.frore.co/posts/india-seeks-to-leverage-its-massive-coastline" class="read-more stretched-link h-color h-op-08">Read More <i class="bi-arrow-up-right transform-ts"></i></a>
 									</div>
 									<div class="col-sm-6 col-md-4 entry">
 										<div class="entry-image">
-											<img src="./images/blog/product.png" alt="...">
+											<img src="./images/blog/product.png" alt="Cloud-based solutions for aviation and maritime.">
 										</div>
 										<div class="entry-meta mb-2 fw-normal">
 											<ul>
-												<li><a href="#">Jan 03, 2023</a></li>
+												<li><a target="_blank" href="https://blog.frore.co/posts/cloud-based-solutions-for-aviation-and-maritime">Jan 03, 2023</a></li>
 											</ul>
 										</div>
 										<div class="entry-title title-sm mb-3">
-											<h3 class="text-transform-none ls-0 fw-medium font-body"><a href="#">Cloud-based solutions for aviation and maritime.</a></h3>
+											<h3 class="text-transform-none ls-0 fw-medium font-body"><a target="_blank" href="https://blog.frore.co/posts/cloud-based-solutions-for-aviation-and-maritime">Cloud-based solutions for aviation and maritime.</a></h3>
 										</div>
-										<a href="#" class="read-more stretched-link h-color h-op-08">Read More <i class="bi-arrow-up-right transform-ts"></i></a>
+										<a target="_blank" href="https://blog.frore.co/posts/cloud-based-solutions-for-aviation-and-maritime" class="read-more stretched-link h-color h-op-08">Read More <i class="bi-arrow-up-right transform-ts"></i></a>
 									</div>
 								</div>
 							</div>
